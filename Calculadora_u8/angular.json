@@ -61,6 +61,12 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options":{
+            "buildTarget": "Calculadora_u8:build",
+            "host": "0.0.0.0",
+            "port": 3000,
+            "disableHostCheck": true 
+          },
           "configurations": {
             "production": {
               "buildTarget": "Calculadora_u8:build:production"
